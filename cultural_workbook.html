@@ -47,6 +47,10 @@
     <br><br>
     <div id="geolocation"></div>
     <button onClick="getLocation()">Show Geolocation</button>
+    <br><br>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <img id="drag1" src="https://tsi.lv/wp-content/uploads/2020/02/alexander_grakovski-300x300.png" draggable="true" ondragstart="drag(event)">
+
     <script>
         const el = document.getElementById("geolocation");
         
@@ -62,6 +66,29 @@
           el.innerHTML = "Latitude: " + position.coords.latitude +
           "<br>Longitude: " + position.coords.longitude;
         }
+
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
     </script>
+
+    <style>
+        #div1 {
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            border: 1px solid #000000;
+        }
+    </style>
 </body>
 </html>
