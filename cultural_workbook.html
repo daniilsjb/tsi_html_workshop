@@ -29,27 +29,38 @@
 
         <input type="submit" value="Register">
     </form>
+    
     <br><br>
+
     <form action="https://www.youtube.com/watch" method="get">
         <input type="hidden" name="v" value="mHrtsCGR8yk" />
         <input type="submit" value="Learn More">
     </form>
+
     <br><br>
+
     <form action="https://www.youtube.com/results" method="get">
         <label for="search">YouTube:</label><br>
         <input type="text" name="search_query" value="" />
         <input type="submit" value="Search">
     </form>
+
     <br><br>
+
     <iframe width="600" height="400"
         src="https://www.youtube.com/embed/mHrtsCGR8yk">
     </iframe>
+
     <br><br>
+
     <div id="geolocation"></div>
     <button onClick="getLocation()">Show Geolocation</button>
+
     <br><br>
-    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-    <img id="drag1" src="https://tsi.lv/wp-content/uploads/2020/02/alexander_grakovski-300x300.png" draggable="true" ondragstart="drag(event)">
+
+    <div id="droppable" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <img id="drag1" src="https://tsi.lv/wp-content/uploads/2020/02/alexander_grakovski-300x300.png"
+        draggable="true" ondragstart="drag(event)">
 
     <script>
         const el = document.getElementById("geolocation");
@@ -83,7 +94,7 @@
     </script>
 
     <style>
-        #div1 {
+        #droppable {
             width: 300px;
             height: 300px;
             padding: 10px;
