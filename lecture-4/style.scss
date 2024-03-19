@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$primary-color: #496989;
+$secondary-color: #58A399;
+
+// Taken from: https://tailwindcss.com/docs/customizing-colors
+$color-gray-50:  #f9fafb;
+$color-gray-100: #f3f4f6;
+$color-gray-200: #e5e7eb;
+$color-gray-300: #d1d5db;
+$color-gray-400: #9ca3af;
+$color-gray-500: #6b7280;
+$color-gray-600: #4b5563;
+$color-gray-700: #374151;
+$color-gray-800: #1f2937;
+$color-gray-900: #111827;
+$color-gray-950: #030712;
+
+$dimmed-color: $color-gray-500;
+
+body {
+  font-family: "Kaisei Tokumin", serif;
+  max-width: 800px;
+  padding: 16px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3 {
+  color: $primary-color;
+}
+
+h1 {
+  text-align: center;
+}
+
+li {
+  list-style-type: circle;
+}
+
+pre {
+  background-color: $color-gray-100;
+  padding: 8px;
+}
+
+#author {
+  display:  block;
+  text-align: right;
+}
+
+.highlight {
+  color: $secondary-color;
+}
+
+.disclaimer {
+  color: $dimmed-color;
+}

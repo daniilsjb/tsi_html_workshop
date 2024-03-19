@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Kaisei Tokumin", serif;
+  max-width: 800px;
+  padding: 16px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3 {
+  color: #496989;
+}
+
+h1 {
+  text-align: center;
+}
+
+li {
+  list-style-type: circle;
+}
+
+pre {
+  background-color: #f3f4f6;
+  padding: 8px;
+}
+
+#author {
+  display: block;
+  text-align: right;
+}
+
+.highlight {
+  color: #58a399;
+}
+
+.disclaimer {
+  color: #6b7280;
+}
